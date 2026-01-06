@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Celestial Cultivation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app__header">
+      <div>
+        <h1>Celestial Cultivation</h1>
+        <p class="subtitle">Idle 3D-inspired cultivation journey.</p>
+      </div>
+      <div class="header__actions">
+        <button id="reset-btn" class="ghost">Soft Reset</button>
+      </div>
+    </header>
+
+    <section class="status">
+      <div class="status__item">
+        <div class="status__label">Stage</div>
+        <div id="stage" class="status__value"></div>
+      </div>
+      <div class="status__item">
+        <div class="status__label">Qi</div>
+        <div id="qi" class="status__value"></div>
+      </div>
+      <div class="status__item">
+        <div class="status__label">Insight</div>
+        <div id="insight" class="status__value"></div>
+      </div>
+      <div class="status__item">
+        <div class="status__label">Body</div>
+        <div id="body" class="status__value"></div>
+      </div>
+      <div class="status__item">
+        <div class="status__label">Spirit</div>
+        <div id="spirit" class="status__value"></div>
+      </div>
+    </section>
+
+    <main class="layout">
+      <section class="scene">
+        <div class="scene__sky"></div>
+        <div class="scene__mountain"></div>
+        <div class="scene__platform">
+          <div class="avatar">
+            <div class="avatar__core"></div>
+            <div class="orbit orbit--outer"></div>
+            <div class="orbit orbit--inner"></div>
+            <div class="sword sword--one"></div>
+            <div class="sword sword--two"></div>
+          </div>
+          <div class="aura"></div>
+        </div>
+      </section>
+
+      <section class="panels">
+        <div class="panel">
+          <h2>Actions</h2>
+          <div class="actions">
+            <button id="meditate-btn">Meditate (+Qi)</button>
+            <button id="study-btn">Study Dao (+Insight)</button>
+            <button id="train-btn">Train Body (+Body)</button>
+            <button id="focus-btn">Focus Spirit (+Spirit)</button>
+            <button id="explore-btn" class="ghost">Explore World</button>
+            <button id="breakthrough-btn" class="primary">Attempt Breakthrough</button>
+          </div>
+          <div class="progress">
+            <div class="progress__label">Stage Progress</div>
+            <div class="progress__bar">
+              <div id="progress-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Log</h2>
+          <div id="log" class="log"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
